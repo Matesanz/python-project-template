@@ -1,13 +1,13 @@
 # 👋 {{cookiecutter.project_name}}
 
-## 👋 Description
+## 🪧 Description
 
 {{cookiecutter.project_description}}
 
 ## 🗃️ Table of Contents
 
-- [👋 {{cookiecutter.project_name}}](#-cookiecutterproject_name)
-  - [👋 Description](#-description)
+- [👋 {{cookiecutter.project_name}}](#-{{cookiecutter.project_slug}})
+  - [🪧 Description](#-description)
   - [🗃️ Table of Contents](#️-table-of-contents)
   - [🚀 Basic Usage](#-basic-usage)
     - [📚 Documentation](#-documentation)
@@ -20,11 +20,12 @@
     - [🌹 Poetry](#-poetry)
       - [📦 Installing Poetry](#-installing-poetry)
       - [ℹ️ Poetry Basic Usage](#ℹ️-poetry-basic-usage)
+  - [🙋 Author](#-author)
 
 ## 🚀 Basic Usage
 
 ```python
-import {{cookiecutter.project_name}}
+import {{cookiecutter.pkg_name}}
 ```
 
 ### 📚 Documentation
@@ -36,7 +37,6 @@ mkdocs serve
 ```
 
 👉 Then go to http://localhost:8000
-
 
 ## 📦 Installation
 
@@ -82,7 +82,7 @@ To apply changes made to the [dockerfile](docker/Dockerfile) or the [devcontaine
    F1 > Rebuild Container
    ```
 
-👍 It will **install** automatically **pose_estimation library** in development mode and all the [pre-commit hooks](.pre-commit-config.yaml) along all the tools needed for a correct development: black, isort, pylint, mypy, pytest...
+👍 It will **install** automatically **`{{cookiecutter.pkg_name}}`** in development mode and all the [pre-commit hooks](.pre-commit-config.yaml) along all the tools needed for a correct development: black, isort, pylint, mypy, pytest...
 
 ### 🧑‍⚖️ Pre-Commit
 
@@ -139,3 +139,9 @@ Install added dependencies:
 ```bash
 poetry install
 ```
+
+## 🙋 Author
+
+🙋 **Name**: {{cookiecutter.author_name}}
+
+📩 **Email**: {{cookiecutter.author_email}}

@@ -28,4 +28,5 @@ markdown_extensions:
       alternate_style: true
 
 watch:
-  - '{{cookiecutter.project_name}}'
+  - '{{cookiecutter.pkg_name}}'
+  - docs

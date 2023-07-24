@@ -3,9 +3,13 @@ theme:
   name: material
   theme:
   palette:
-    primary: pink
+    primary: indigo
   features:
     - content.code.annotate
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.prune
+    - navigation.indexes
 
 plugins:
   - search
@@ -15,6 +19,7 @@ plugins:
         python:
           options:
             separate_signature: true
+  - mkdocs-jupyter
 
 markdown_extensions:
   - admonition

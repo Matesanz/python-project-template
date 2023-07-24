@@ -6,7 +6,7 @@
 
 ## 🗃️ Table of Contents
 
-- [👋 {{cookiecutter.project_name}}](#-{{cookiecutter.project_slug}})
+- [👋 {{cookiecutter.project\_name}}](#-cookiecutterproject_name)
   - [🪧 Description](#-description)
   - [🗃️ Table of Contents](#️-table-of-contents)
   - [🚀 Basic Usage](#-basic-usage)
@@ -17,9 +17,6 @@
   - [🏗️ Development](#️-development)
     - [🐋 Devcontainer Environment](#-devcontainer-environment)
     - [🧑‍⚖️ Pre-Commit](#️-pre-commit)
-    - [🌹 Poetry](#-poetry)
-      - [📦 Installing Poetry](#-installing-poetry)
-      - [ℹ️ Poetry Basic Usage](#ℹ️-poetry-basic-usage)
   - [🙋 Author](#-author)
 
 ## 🚀 Basic Usage
@@ -93,52 +90,6 @@ pre-commit install
 ```
 
 This will install a bunch of hooks that will check staged files (only the `*.py` staged files) to check that they stick to black, autopep8, isort and some other standards.
-
-### 🌹 Poetry
-
-#### 📦 Installing Poetry
-
-This project uses Poetry as dependency manager. It needs to be installed in our computer to be used.
-To install Poetry in Linux, macOS or Windows we need to execute the next line:
-
-Option 1:
-
-```bash
-curl -sSL https://install.python-poetry.org | python3 -
-```
-
-Option 2:
-
-```bash
-pip install poetry
-```
-
-To check if Poetry is working fine execute:
-
-```bash
-poetry --version
-Poetry (version 1.2.0)
-```
-
-#### ℹ️ Poetry Basic Usage
-
-To add a new dependency:
-
-```bash
-poetry add <package-name>
-```
-
-If you only want your dependency to be installed in development mode:
-
-```bash
-poetry add --dev <package-name>
-```
-
-Install added dependencies:
-
-```bash
-poetry install
-```
 
 ## 🙋 Author
 
